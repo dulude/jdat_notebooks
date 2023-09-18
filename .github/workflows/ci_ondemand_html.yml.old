@@ -1,8 +1,8 @@
-name: Build and deploy notebooks
+name: On demand HTML generation
 
 #  Only run this when the master branch changes
 on:
-  push:
+  workflow_dispatch:
     branches:
     - main
     # If your git repository has the Jupyter Book within some-subfolder next to
@@ -13,7 +13,7 @@ on:
     # - some-subfolder/**
     paths:
       - 'notebooks/**.ipynb'
-      - '*.yml'
+
 env: 
   WEBBPSF_PATH: $HOME/data/webbpsf-data
   PYSYN_CDBS: $PWD/grp/redcat/trds/
@@ -28,6 +28,10 @@ jobs:
           sudo rm -rf /usr/share/dotnet
           sudo rm -rf /opt/ghc
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+    - name: Increase Swap Size
+      uses: pierotofy/set-swap-space@master
+      with:
+        swap-size-gb: 10
     - uses: actions/checkout@v3
     - name: Set up Python 3.8.12
       uses: actions/setup-python@v2 ## needed for caching
@@ -38,7 +42,6 @@ jobs:
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo $CONDA/bin >> $GITHUB_PATH
-
     - name: Install Python dependencies
       run: |
         sudo apt-get install python3-pip
@@ -64,12 +67,10 @@ jobs:
     - name: Build book HTML 
       run: |
         jupyter-book build .
-
     - name: Execute JDAVIZ placeholder substitution
       run: |
         cp jdaviz_placeholder_new.png _build/html                                                                                                                 
         ./placeholder.sh
-
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.6.1

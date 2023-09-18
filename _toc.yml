@@ -45,10 +45,12 @@ parts:
       title: Composite Model Spectral Fitting
     - file: notebooks/NIRSpec_MAST_Query/NIRSpec_MAST_Query.ipynb
       title: MAST Query
+    - file: notebooks/rgb_imviz/imviz_rgb_carina.ipynb
+      title: RGB images with Imviz
     - file: notebooks/specviz_notebookGUI_interaction/specviz_notebook_gui_interaction_redshift.ipynb
       title: Specviz Simple Demo
-    - file: notebooks/cube_fitting/cube_fitting.ipynb
-      title: IFU Cube Line Maps
+    #- file: notebooks/cube_fitting/cube_fitting.ipynb
+    # title: IFU Cube Line Maps
   - caption: MIRI
     chapters:
     #- file: notebooks/example_notebook
@@ -67,7 +69,7 @@ parts:
       title: MRS Mstar - Data Analysis
     - file: notebooks/MIRI_IFU_YSOs_in_the_LMC/isha_nayak_ysos_in_the_lmc.ipynb
       title: IFU of YSOs in LMC
-    - file: notebooks/MIRI_LRS_spectral_extraction/miri_lrs_spectral_extraction.ipynb
+    - file: notebooks/MIRI_LRS_spectral_extraction/miri_lrs_advanced_extraction_part1.ipynb
       title: LRS Optimal Spectral Extraction
   - caption: NIRCam
     chapters:
@@ -114,15 +116,16 @@ parts:
   - caption: NIRSpec
     chapters:
     - file: notebooks/IFU_cube_continuum_fit/NGC4151_FeII_ContinuumFit.ipynb
-    #  title: IFU Background Subtraction
-    #- file: notebooks/cube_fitting/cube_fitting.ipynb
+      title: IFU Background Subtraction
+    - file: notebooks/cube_fitting/cube_fitting.ipynb
       title: IFU Cube Modeling
     - file: notebooks/ifu_optimal/ifu_optimal.ipynb
       title: IFU Optimal Spectral Extraction
     - file: notebooks/optimal_extraction/Spectral_Extraction-static.ipynb
       title: MOS Optimal Extraction
-    - file: notebooks/mos-spectroscopy/MOSspec_sv06_revised.ipynb
+    - file: notebooks/mos_spectroscopy_advanced/MOSspec_advanced.ipynb
       title: MOS Spectroscopy of Extragalactic Field
     - file: notebooks/transit_spectroscopy_notebook/Exoplanet_Transmission_Spectra_JWST.ipynb
       title: BOTS Time Series Observations
-
+    - file: notebooks/galaxy_redshift/redshift_fitting.ipynb
+      title: Redshift and Template Fitting

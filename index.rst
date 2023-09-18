@@ -49,6 +49,11 @@ location of the notebooks for you to :ref:`download <install>`.
        - **Data:**
        - **Tools:** mast, astroquery
        - **Cross-instrument:** All.
+   * - `RGB images with Imviz <https://github.com/spacetelescope/jdat_notebooks/tree/main/notebooks/rgb_imviz>`_
+     - - **Use case:** create RGB images using Imviz programmatically.
+       - **Data:** Carina Nebula, NIRCam observations
+       - **Tools:** jdaviz
+       - **Cross-instrument:** Any imager.
    * - `Specviz GUI <https://github.com/spacetelescope/jdat_notebooks/tree/main/notebooks/specviz_notebookGUI_interaction>`_
      - - **Use case:** How to inspect and export spectra in Specviz GUI.
        - **Data:** NIRISS simulation generated with MIRAGE.
@@ -82,10 +87,10 @@ location of the notebooks for you to :ref:`download <install>`.
        - **Tools:** specutils, photutils, astropy.
        - **Cross-instrument:**
    * - `LRS Optimal Extraction <https://github.com/spacetelescope/jdat_notebooks/tree/main/notebooks/MIRI_LRS_spectral_extraction>`_
-     - - **Use case:**Optimal spectral extraction.
-       - **Data:** MIRISim simulated LRS spectrum.
-       - **Tools:** jwst pipeline, gwcs.
-       - **Cross-instrument:** NIRSpec, NIRISS, MIRI
+     - - **Use case:** Spectral extraction of slit spectra with the JWST calibration pipeline.
+       - **Data:** Publicly available science data
+       - **Tools:** jwst, matplotlib, astropy.
+       - **Cross-instrument:** NIRSpec, MIRI
    * - NIRCam
      -
    * - `Point Source Aperture Photometry <https://github.com/spacetelescope/jdat_notebooks/tree/main/notebooks/aperture_photometry>`_
@@ -94,7 +99,7 @@ location of the notebooks for you to :ref:`download <install>`.
        - **Tools:** jwst pipeline, photutils
        - **Cross-instrument:** MIRI, NIRCam
    * - `Multiband Extended Aperture Photometry <https://github.com/spacetelescope/jdat_notebooks/tree/main/notebooks/NIRCam_photometry>`_
-     - - **Use case:** measure extended galaxy galaxy photomtery in a field.
+     - - **Use case:** measure extended galaxy galaxy photometry in a field.
        - **Data:** Simulated NIRCam images from JADES GTO extragalactic blank field.
        - **Tools:** photutils
        - **Cross-instrument:** MIRI, NIRCam
@@ -104,7 +109,7 @@ location of the notebooks for you to :ref:`download <install>`.
        - **Tools:** photutils
        - **Cross-instrument:** MIRI, NIRCam
    * - `PSF Photometry <https://github.com/spacetelescope/jdat_notebooks/tree/main/notebooks/psf_photometry>`_
-     - - **Use case:** Crowded field imaging with PSF-fitting photomtery.
+     - - **Use case:** Crowded field imaging with PSF-fitting photometry.
        - **Data:** Simulated NIRCam images of LMC astrometric calibration field.
        - **Tools:** webbpsf, photutils
        - **Cross-instrument:** MIRI, NIRCam
@@ -152,12 +157,21 @@ location of the notebooks for you to :ref:`download <install>`.
        - **Data:** Simulated NIRSpec MOS data; point sources.
        - **Tools:** jwst pipeline
        - **Cross-instrument:**
+   * - `MOS Spectroscopy of Extragalactic Field <https://github.com/spacetelescope/jdat_notebooks/tree/main/notebooks/mos_spectroscopy_advanced>`_
+     - - **Use case:** emission-line measurements and template matching on 1D spectra.
+       - **Data:** CEERS NIRSpec observations.
+       - **Tools:** specutils, astropy, matplotlib, jdaviz
+       - **Cross-instrument:**  
    * - `BOTS Transiting Exoplanet <https://github.com/spacetelescope/jdat_notebooks/tree/main/notebooks/transit_spectroscopy_notebook>`_
      - - **Use case:** Primary transit of an exoplanet.
        - **Data:** Simulated NIRSpec data from ground-based campaign.
        - **Tools:**
        - **Cross-instrument:**
-
+   * - `Redshift and Template Fitting <https://github.com/spacetelescope/jdat_notebooks/tree/main/notebooks/galaxy_redshift>`_
+     - - **Use case:** Measure the redshift of a galaxy from its spectrum using 2 different methods.
+       - **Data:** JWST/NIRSpec spectrum from program 2736.
+       - **Tools:**  jdaviz, specutils.
+       - **Cross-instrument:** NIRISS, NIRCam.
 Help
 ====
 
