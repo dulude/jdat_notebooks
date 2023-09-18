@@ -1,0 +1,9 @@
+name: a11ywatch Manual Execution
+on:
+  workflow_dispatch:
+
+jobs:
+  WebAccessibilityEvaluation:
+  - uses: a11ywatch/github-actions@v2.0.2
+    with:
+      WEBSITE_URL: https://spacetelescope.github.io/jdat_notebooks
