@@ -11,3 +11,4 @@ jobs:
           WEBSITE_URL: https://spacetelescope.github.io/jdat_notebooks
           SITE_WIDE: true
           SUBDOMAINS: true
+          SITEMAP: true
