@@ -8,7 +8,7 @@ jobs:
       - name: Web Accessibility Evaluation
         uses: a11ywatch/github-actions@v2.0.2
         with:
-          WEBSITE_URL: https://spacetelescope.github.io/jdat_notebooks
+          WEBSITE_URL: https://spacetelescope.github.io/jdat_notebooks/
           SITE_WIDE: true
           SUBDOMAINS: true
           SITEMAP: true
