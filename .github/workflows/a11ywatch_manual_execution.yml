@@ -13,3 +13,5 @@ jobs:
           SUBDOMAINS: true
           SITEMAP: true
           UPGRADE: true
+        env:
+          PLAYWRIGHT_VERSION: 1.38.0
