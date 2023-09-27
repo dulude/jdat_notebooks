@@ -12,3 +12,4 @@ jobs:
           SITE_WIDE: true
           SUBDOMAINS: true
           SITEMAP: true
+          UPGRADE: true
