@@ -5,6 +5,7 @@ jobs:
   a11yWatchRun:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Web Accessibility Evaluation
         uses: a11ywatch/github-actions@v2.0.2
         with:
