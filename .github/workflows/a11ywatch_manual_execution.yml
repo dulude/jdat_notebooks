@@ -15,6 +15,7 @@ jobs:
           SITEMAP: true
           UPGRADE: true
           LIST: true
+          EXTERNAL: false
         env:
           PLAYWRIGHT_VERSION: 1.38.0
           EXTERNAL: false
