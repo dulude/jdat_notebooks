@@ -7,12 +7,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Web Accessibility Evaluation
-        uses: a11ywatch/github-actions@v2.1.4
+        uses: a11ywatch/github-actions@v2.1.6
         with:
           WEBSITE_URL: https://spacetelescope.github.io/jdat_notebooks/
           SITE_WIDE: true
           SUBDOMAINS: true
           SITEMAP: true
           UPGRADE: true
-          LIST: true
+          LIST: false
           EXTERNAL: false
+          UPLOAD: true
