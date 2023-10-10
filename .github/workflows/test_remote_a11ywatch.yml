@@ -1,0 +1,10 @@
+name: a11ywatch Remote Manual Execution
+on:
+  workflow_dispatch:
+jobs:
+  a11yWatchRun:
+    uses: dulude/notebook-ci-actions/.github/workflows/html_accessibility_check.yml@generic_a11yWatch_workflow
+    with:
+      target_url: https://spacetelescope.github.io/jdat_notebooks/
+
+    
